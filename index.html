@@ -1,0 +1,16 @@
+ <form:form id="searchForm" modelAttribute="search" action="${path}/user/userIndex.htm" method="post" class="search-form form-horizontal">
+                  <label class="search-label">用户名:</label>
+                  <input type="text" id="searchUserDescription" name="searchUserDescription" class="input-small" value="${searchUserDescription}">
+                
+</form>
+<div class="pagination" currentPage="${page}" pageCount="${pageCount}" total="${total}" style="text-align: right;"></div>
+
+注释：
+form中
+id作为可用的标识符
+action为submit提交跳转的地址
+
+div中
+currentPage 为当前页数字
+pageCount 为总页数
+total 为总条数
